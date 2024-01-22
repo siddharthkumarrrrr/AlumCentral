@@ -46,8 +46,8 @@ function BitAlmuniImg() {
     <>
       <div className="container">
         <div className="content-container">
-          <div id="university-name"><span><h3  class="animate__animated animate__backInLeft animate__delay-1s">👋    Welcome To </h3></span>
-        <div><h2 className=' animate__animated animate__flipInX animate__delay-2s'> BIT Mesra's AlumCentral</h2></div></div>
+          <div id="university-name"><span><h3  class="animate__animated animate__backInLeft animate__delay-1s">Welcome To👋</h3></span>
+        <div><h2 className=' animate__animated animate__flipInX animate__delay-2s'> Bit Mesra 's Alumcentral</h2></div></div>
           <img src={BuildingImg} alt="" id="university-image" />
         </div>
                              

@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar'
 import BitAlmuniImg from '../../Components/BitAlmuniImg'
 import Foot from '../../Components/Foot'
 import CustomSlider from '../../Components/CustomSlider'
-
+ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div>
@@ -17,7 +17,7 @@ function Home() {
     
     <div className="button_list">
         <button>AlumiList</button>
-        <button>Click Here to Create Your Profile</button>
+        <button><Link to='./Student_login'>Click Here to Create Your Profile</Link></button>
       </div>
       <CustomSlider/>
       <Foot/>

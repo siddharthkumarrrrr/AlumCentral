@@ -1,0 +1,105 @@
+/* AlumniLoginForm.css */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.header  img{
+
+  width: 90vw;
+  height: 30vh;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.login-container form{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-container {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-container {
+  position: relative;
+}
+
+button {
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.upload-area {
+  margin-top: 20px;
+  position: relative;
+}
+
+.upload-box {
+  width: 150px; /* Adjust the size of the square as needed */
+  height: 150px; /* Adjust the size of the square as needed */
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+ 
+}
+
+.upload-box:hover {
+  border-color: #007bff;
+}
+
+.upload-box input {
+  display: none;
+}
