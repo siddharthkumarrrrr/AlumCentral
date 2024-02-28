@@ -16,6 +16,7 @@ const Student_Login = () => {
   const [rollNo, setRollNo] = useState('');
   const [course, setCourse] = useState(''); // Added course state
   const [passingYear, setPassingYear] = useState(''); 
+  const [formValues, setFormValues] = useState([]);
 
 
   const handleNameChange = (e) => {
@@ -67,6 +68,31 @@ const Student_Login = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+         
+    const formData = {
+      name: name,
+      rollno:rollNo,
+      mobile_no: mobile,
+      company: company,
+      designation:designation,
+      course:course,
+    };
+    // Update the formValues array with the new form data
+    setFormValues([...formValues, formData]);
+    // Clear input fields
+    setName("");
+    setEmail("");
+    setDob("");
+    setCompany("");
+    setMobile("");
+    setDesignation("");
+    setRollNo("");
+    setCourse("");
+    setPassingYear("");
+  
+  
+
+
 
     if (captchaVerified) {
       console.log('CAPTCHA is verified!');
@@ -184,7 +210,7 @@ const Student_Login = () => {
           />
           <br/>
           <br/>
-        <button type="submit">SUBMIT</button>
+        <button >SUBMIT</button>
         </fieldset>
       </form>
 
@@ -196,8 +222,20 @@ const Student_Login = () => {
       </div>
       </div>
       </div>
-        <Foot/>
-       </>
+      <div className="form-values">
+            {formValues.map((data) => (
+              <div >
+                <p>Name: {data.name}</p>
+                <p>Company: {data.company}</p>
+                <p>Mobile Number: {data.mobile_no}</p>
+                <p>Designation: {data.designation}</p>
+                <p>Roll No: {data.rollNo}</p>
+                <p>Course: {data.course}</p>
+            
+              </div>
+            ))}
+          </div>
+     </>
   );
 };
 

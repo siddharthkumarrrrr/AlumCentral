@@ -6,6 +6,9 @@ import Navbar from "../../Components/Navbar";
 function Login() {
   const [passwordType, setPasswordType] = useState("password");
   const [passwordInput, setPasswordInput] = useState("");
+  const submithandler = (e) =>{
+    e.preventdefault();
+  }
   const toggleEye = () => {
     if (passwordType === "password") {
       setPasswordType("text");
@@ -26,7 +29,7 @@ function Login() {
         <div className="right">
           <div className="login-form">
             <h1 id="admin">Admin Login</h1>
-            <form>
+            <form onSubmit={submithandler}>
               <div className="input-box">
                 <label>Email Id</label>
 
@@ -62,8 +65,7 @@ function Login() {
                 
                 </div>
               </div>
-
-              <button name="submit">Login</button>
+            <button>submit</button>
             </form>
           </div>
         </div>
